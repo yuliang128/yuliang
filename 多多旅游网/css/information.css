@@ -1,0 +1,187 @@
+#container .list{
+    width: 910px;
+    background-color: #eeeeee;
+}
+#container .list .left{
+    display: inline-block;
+}
+#container .left a{
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #666;
+ }
+#container .left a:first-child{
+    margin-left: 1px;
+    border-top:3px solid #458b00;
+    background-color: white;
+}
+#container .list .right{
+    float: right;
+    margin-right: 30px;
+}
+#container .right a{
+    display: inline-block;
+    margin:10px 5px;
+    text-align: center;
+    color: #666;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+}
+#container .right .first,#container .right a:hover{
+    background-color: #458b00;
+    color: white;
+}
+#container .picture{
+    display: none;
+}
+
+#container .more{
+
+    width: 910px;
+    height: 550px;
+    display: none;
+
+}
+
+#container .picture figure{
+    border:1px solid #ddd;
+    display: inline-block;
+    text-align: left;
+    width: 910px;
+    border-radius: 4px;
+    margin:10px 0px;
+    position: relative;
+}
+#container .picture figure img{
+    margin: 4px;
+    float: left;
+}
+#container .picture figcaption{
+    float: left;
+    width: 505px;
+    /*background-color: red;*/
+    margin:15px 0 15px 15px;
+}
+#container .picture h2{
+    font-size: 24px;
+    color: #666;
+    width: 250px;
+    /*background-color: black;*/
+    margin-bottom: 20px;
+}
+#container .picture h3{
+    font-size: 14px;
+    color: #777;
+    width: 250px;
+    /*background-color: black;*/
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+#container .picture .mark{
+   width: 250px;
+    /*background-color: blue;*/
+    line-height: 2;
+    font-size: 14px;
+    color: #777;
+}
+#container .mark mark{
+    background-color: white;
+    border:1px solid #59b200;
+    border-radius: 4px;
+    padding: 1px 5px;
+    color: #59b200;
+}
+#container .picture .price{
+    width: 150px;
+    /*background-color: #59b200;*/
+    position: absolute;
+    top:60px;
+    right: 30px;
+}
+#container .price span{
+    width: 150px;
+    color: #ff6600;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+#container .price span strong{
+    font-size: 24px;
+    font-weight: bold;
+}
+#container .price span s{
+    color: #777;
+}
+#container .price a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #ff6600;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+}
+#container .picture .type{
+    width: 90px;
+    height: 25px;
+    background-color: #59b200;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+#container footer{
+    width: 506px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fafafa;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 20px;
+    color: #777;
+}
+#container .tra{
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top:0;
+    right: 0;
+    background: url("img/disc.png");
+    color: #ff6600;
+}
+#container .tra p{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top:10px;
+    right: 2px;
+}
+#container .last a{
+    display: block;
+    width:110px;
+    margin:10px 400px 0 400px;
+    padding: 8px 20px;
+    text-align: center;
+    color: #777;
+    background-color: #FAFAFA;
+    border:1px solid #D0D0D0;
+    border-radius: 5px;
+}
+
+
+
+

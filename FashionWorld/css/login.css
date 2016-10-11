@@ -1,0 +1,130 @@
+    @font-face {
+            	font-family: 'Roboto-Regular';
+            	src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+            }
+            
+            @font-face {
+            	font-family: 'Dorsa-Regular';
+            	src: url(../fonts/Dorsa-Regular.ttf) format('truetype');
+            }
+            
+            body {
+            	font-family: 'Roboto-Regular';
+            }
+            
+            .banner {
+            	width: 100%;
+            	background: url(../img/header_bg.png) no-repeat center center;
+            	-webkit-background-size: cover;
+            	background-size: cover;
+            }
+            
+            .banner-content {
+            	width: 50%;
+            	margin: 0 auto;
+            	background-color: rgba(228, 98, 137, 0.8);
+            	padding: 4% 4%;
+            	color: #FFFFFF;
+            }
+            
+            .banner-content a {
+            	color: #FFFFFF;
+            	text-decoration: none;
+            }
+            
+            .banner-content>h1 {
+            	font-family: 'Dorsa-Regular';
+            	font-size: 20em;
+            	line-height: 0.5em;
+            	/*background-color: #080808;*/
+            }
+            
+            .banner-content>h1 span {
+            	font-size: 0.5em;
+            }
+            
+            .banner-content h5 {
+            	font-size: 1.2em;
+            	border-bottom: 1px dashed #FFFFFF;
+            }
+            
+            .contact-info{
+            	/*padding-top: 2em;*/
+            }
+            
+            .contact-info h3,.contact-form h3,.map h3{
+            	font-family: 'Dorsa-Regular';
+            	color: #803d9a;
+            	font-size:4em;
+            }
+            
+            .contact-info p{
+            	font-family:'Roboto-Regular';
+            	font-size: 1em;
+            	color:#393939;
+            	padding-bottom: 1em;
+            } 
+            .map{
+            	padding:2em 0em;
+            }
+            
+           
+            
+  /*resposive for width below 1024*/
+            
+            @media only screen and (max-width: 1200px) {
+            	.banner-content {
+            		width: 60%;
+            	}
+            	.banner-content>h1 {
+            		font-size: 15em;
+            	}
+            	.tab-scroll h3 {
+            		margin-top: 10%;
+            		font-size: 4em;
+            	}
+            	.slide-PicPart .item p {
+            		padding-top: 1em;
+            	}
+            }
+            /*responsive for  width below 768*/
+            
+            @media only screen and (max-width: 768px) {
+            	.banner-content {
+            		width: 60%;
+            	}
+            	.banner-content>h1 {
+            		font-size: 10em;
+            	}
+            	.slide-PicPart .item p {
+            		padding-top: 2em;
+            		font-size: 2.8em;
+            	}
+            }
+            
+            @media only screen and (max-width: 554px) {
+            	.banner-content {
+            		width: 70%;
+            	}
+            	.banner-content>h1 {
+            		font-size: 8em;
+            	}
+            	.tab-scroll h3 {
+            		margin-top: 2%;
+            		font-size: 3em;
+            	}
+            	.slide-PicPart .item p {
+            		font-size: 2.8em;
+            		padding-top: 0.5em;
+            		line-height: 1em;
+            	}
+            }
+            
+
+     .footer {
+            	background-color: #803d9a;
+            	text-align: center;
+            	color: #FFFFFF;
+            	font-size: 1em;
+            	line-height: 5em;
+            }

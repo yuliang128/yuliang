@@ -1,0 +1,129 @@
+[class^='imgHover-'] {
+				position: relative;
+				display: inline-block;
+				margin: 0px;
+				max-width: 100%;
+				background-color: rgba(12, 125, 244, 0.3);
+				color: #fff;
+				overflow: hidden;
+			}
+			
+			[class^='imgHover-']>img {
+				max-width: 100%;
+				vertical-align: top;
+			}
+			
+			[class^='imgHover-']> figcaption {
+				background-color: inherit;
+				padding: 30px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			
+			[class^='imgHover-'],
+			[class*=' imgHover-'],
+			[class^='imgHover-']:before,
+			[class^='imgHover-']:after,
+			[class*=' imgHover-']:before,
+			[class*=' imgHover-']:after,
+			[class^='imgHover-'] *,
+			[class*=' imgHover-'] *,
+			[class^='imgHover-'] *:before,
+			[class^='imgHover-'] *:after,
+			[class*=' imgHover-'] *:before,
+			[class*=' imgHover-'] *:after {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				-webkit-transition: all 0.35s ease;
+				transition: all 0.35s ease;
+			}
+			
+			.imgHover-fade-up figcaption {
+				opacity: 0;
+			}
+			
+			.imgHover-fade-up:hover> img {
+				opacity: 0;
+			}
+			
+			.imgHover-fade-up:hover figcaption {
+				opacity: 1;
+			}
+			
+			[class^='imgHover-push-']:hover figcaption,
+			[class*=' imgHover-push-']:hover figcaption {
+				-webkit-transform: translate(0, 0);
+				transform: translate(0, 0);
+			}
+			
+			.imgHover-push-up figcaption {
+				-webkit-transform: translateY(100%);
+				transform: translateY(100%);
+			}
+			
+			.imgHover-push-up:hover> img {
+				-webkit-transform: translateY(-100%);
+				transform: translateY(-100%);
+			}
+			
+			.imgHover-push-right figcaption {
+				-webkit-transform: translateX(-100%);
+			}
+			
+			.imgHover-push-right:hover img {
+				-webkit-transform: translateX(100%);
+			}
+			
+			[class^='imgHover-slide-']:hover figcaption,
+			[class*=' imgHover-slide-']:hover figcaption {
+				-webkit-transform: translateY( 80%);
+				transform: translate(80%);
+			}
+			
+			.imgHover-slide-right figcaption {
+				background-color: rgba(10, 10, 10, 0.6);
+				-webkit-transform: translateX(-100%);
+			}
+			
+			.imgHover-slide-up figcaption {
+				background-color: rgba(10, 10, 10, 0.6);
+				-webkit-transform: translateY(-100%);
+			}
+			
+			
+			
+			[class^='imgHover-revel-'] figcaption,
+			[class*=' imgHover-revel-'] figcaption {
+				opacity: 0;
+			}
+			
+			[class^='imgHover-revel-']:hover figcaption,
+			[class*=' imgHover-revel-']:hover figcaption {
+				opacity: 1;
+				-webkit-transition-delay: 1.25s;
+				transition-delay: 1.25s;
+			}
+			
+			[class^='imgHover-revel-']:before,
+			[class*=' imgHover-revel-']:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				/*content: '123';*/
+				background-color: rgba(121, 34, 23, 0.4);
+			}
+			
+			[class^='imgHover-revel-']:hover:before,
+			[class*=' imgHover-revel-']:hover:before {
+				-webkit-transform: translate(0, 0);
+			}
+			
+			.imgHover-revel-up:before {
+				-webkit-transform: translateY(100%);
+			}
+			

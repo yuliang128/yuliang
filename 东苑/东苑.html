@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>东苑中科</title>
+    <link rel="stylesheet" href="css/dongyuan.css">
+    <link rel="stylesheet" href="js/mf-pattern/mF_tbhuabao.css">
+    <script src="js/mf-pattern/mF_tbhuabae.js"></script>
+    <script src="js/myfocus-2.0.1.min.js"></script>
+    <script src="js/jquery-3.0.0.js"></script>
+    <script type="text/javascript">
+        myFocus.set({
+            id:'myFocus',//ID
+            pattern:'mF_tbhuabao'//风格
+        });
+        function setTab(name,cursel,n){
+            for(i=1;i<=n;i++){
+                var menu=document.getElementById(name+i);
+                var con=document.getElementById("con_"+name+"_"+i);
+                menu.className=i==cursel?"hover":"";
+                con.style.display=i==cursel?"block":"none";}}
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="top"></div>
+        <div class="logo">
+            <div class="logo1">
+                <div class="logo11">
+                    <h2><img src="img/logo1.jpg" alt=""></h2>
+                </div>
+                <div class="message">
+                    <p>为改善人类工作生活<em>环境质量/</em>为人与环境<em>和谐相处</em>贡献全部的力量</p>
+                    <span>环保工程整体解决方案供应商</span>
+                </div>
+                <div class="logo13">
+                    <p>设置首页 | 加入收藏 | 关于我们 | 联系我们</p>
+                    <table>
+                        <tr>
+                            <td rowspan="3"><img src="img/logo3.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>024-25126100</td>
+                        </tr>
+                        <tr>
+                            <td>18940190377</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="nav">
+            <div class="menu">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">公司介绍</a></li>
+                    <li><a href="">品牌文化</a></li>
+                    <li><a href="">产品服务</a></li>
+                    <li><a href="">资质荣誉</a></li>
+                    <li><a href="">工程案例</a></li>
+                    <li><a href="">联系我们</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="banner"id="myFocus">
+        <div class="pic">
+            <ul>
+                <li><a href=""><img src="img/banner1.png" alt="" ></a></li>
+                <li><a href=""><img src="img/banner1.png" alt="" ></a></li>
+                <li><a href=""><img src="img/banner1.png" alt=""  ></a></li>
+                <li><a href=""><img src="img/banner1.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center">
+        <div class="service">
+            <h2><img src="img/service.png" alt=""></h2>
+            <div class="service_a">
+                <ul>
+                    <li id="one1" onclick="setTab('one',1,4)"><img src="img/ser1.png" alt=""><span> 除尘系统</span></li>
+                    <li id="one2" onclick="setTab('one',2,4)"><img src="img/ser2.png" alt=""><span> 脱硫系统</span></li>
+                    <li id="one3" onclick="setTab('one',3,4)"><img src="img/ser3.png" alt=""><span> 脱销系统</span></li>
+                    <li id="one4" onclick="setTab('one',4,4)"><img src="img/ser4.png" alt=""><span> 水处理系统</span></li>
+                </ul>
+            </div>
+            <div class="service_b">
+                <div id=con_one_1>
+                <ul>
+                    <li>
+                        <img src="img/ser_bottom1.png" alt="">
+                        <div class="service_bottom">
+                            <p>低压脉冲布袋除尘器 &nbsp; &nbsp;&nbsp;<img src="img/more.png" alt=""></p>
+                            <span>LOW PRESSURE PULSE BAG FILTER</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/ser_bottom2.png" alt="">
+                        <div class="service_bottom">
+                            <p>低压脉冲布袋除尘器 &nbsp; &nbsp;&nbsp;<img src="img/more.png" alt=""></p>
+                            <span>LOW PRESSURE PULSE BAG FILTER</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/ser_bottom3.png" alt="">
+                        <div class="service_bottom">
+                            <p>低压脉冲布袋除尘器 &nbsp; &nbsp;&nbsp;<img src="img/more.png" alt=""></p>
+                            <span>LOW PRESSURE PULSE BAG FILTER</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/ser_bottom4.png" alt="">
+                        <div class="service_bottom">
+                            <p>低压脉冲布袋除尘器 &nbsp; &nbsp;&nbsp;<img src="img/more.png" alt=""></p>
+                            <span>LOW PRESSURE PULSE BAG FILTER</span>
+                        </div>
+                    </li>
+                </ul>
+               </div>
+                <div id=con_one_2 style="display: none;">2</div>
+                <div id=con_one_3 style="display: none;">3</div>
+                <div id=con_one_4 style="display: none;">4</div>
+            </div>
+        </div>
+        <div class="introdution">
+             <div class="intro">
+                    <div class="intro_cen">
+                        <p id=con_p_1>	沈阳东苑中科环境工程有限公司成立于2007年，位于沈阳市．皇姑区．永强工业园区内。主要从事大气污染及污废水设备的产品生产，
+                                工程设计、工程建设、技术研发，安装调试、运营管理于一体的环保公司。 公司拥有一支由众多长期从事环保行业的资深专家组成的专
+                                 业化技术团队，在工业烟气治理除尘、脱硫、脱硝工程，生活污水处理工程，中水回用工程，等领域拥有丰富的技术施工经验。 沈阳东苑
+                               中科环境工程有限公司本着“诚信为本，质量第一”的原则，凭借多年的行业经验和良好的信誉，为建设低碳环保可持续发展目标的实现
+                               而努力奋斗.....</p>
+                        <p id=con_p_2 style="display: none;">2</p>
+                        <p id=con_p_3 style="display: none;">3</p>
+                        <p id=con_p_4 style="display: none;">4</p>
+                    </div>
+                    <div class="intro_bot">
+                        <ul>
+                            <li id="p1" onclick="setTab('p',1,4)"><img src="img/intro1.png" alt=""></li>
+                            <li id="p2" onclick="setTab('p',2,4)"><img src="img/intro2.png" alt=""></li>
+                            <li id="p3" onclick="setTab('p',3,4)"><img src="img/intro3.png" alt=""></li>
+                            <li id="p4" onclick="setTab('p',4,4)"><img src="img/intro4.png" alt=""></li>
+                        </ul>
+                    </div>
+             </div>
+        </div>
+        <div class="tel">
+            <img src="img/tel.jpg" alt="">
+        </div>
+        <div class="culture">
+            <div class="hope">
+                <div class="one">我们的愿景</div>
+                <div class="two" >
+                    <p style="font-size: 14px;text-align: left;color: rgb(104,174,61);margin-top: 4px;margin-bottom: 3px">美好环境与现代化工业和谐并存</p>
+                    <p style="font-size: 12px; text-align: left">公司拥有一支有众多长期从事环保行业的资深专家组成的专业化技术团队，在工业烟气治理除尘、脱硫、脱硝工程、生活污水处理工程，中水回用工程，等领域拥有丰富的技术施工经验</p>
+                </div>
+            </div>
+            <div class="forward">
+                <div class="one">使命追求</div>
+                <div class="two">
+                    <p style="font-size: 14px;text-align: right;color: rgb(104,174,61);margin-top: 4px;margin-bottom: 3px">追求绿色时尚 走向绿色文明</p>
+                    <p style="font-size: 12px;text-align: right">动员中可谓改善人们的工作、生活环境质量、为人与环境和谐共处贡献全部的力量</p>
+                </div>
+            </div>
+            <div class="management">
+                <div class="one">经营理念</div>
+                <div class="two">
+                    <p style="font-size: 14px;text-align: left;color: rgb(104,174,61);margin-top: 4px;margin-bottom: 3px">始于客户需求 终于客户满意</p>
+                    <p style="font-size: 12px; text-align: left">沈阳中院中科环境工程有限公系本着诚信为本，质量第一的原则，凭借多年的行业经验和良好的信誉，为建设低碳环保可持续发展目标的实现儿努力奋斗</p>
+                </div>
+            </div>
+            <div class="value">
+                <div class="one">核心价值观</div>
+                <div class="two">
+                    <p style="font-size: 14px;text-align: right;color: rgb(104,174,61);margin-top: 4px;margin-bottom: 3px">创新、完美、诚信、责任</p>
+                    <p style="font-size: 12px;text-align: right">动员中科理智与为客户提供专业的环境工程、防腐工程治理方案，节省客户施工成本，把最先进的技术、最专业的设计、最成熟的产品和最完善的服务提供给用户</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+             <div class="project1">
+                 <img src="img/project_1.png" alt="">
+                 <div class="project_left">
+                      <dl>
+                          <dt><img src="img/project1.png" alt="">
+                              <p><img src="img/more.png" alt=""></p>
+                          </dt>
+                          <dd>
+                              <ol>
+                                  <li>黑山县供暖有限公司（脉冲布袋除尘器）</li>
+                                  <li>抚顺页岩炼油厂（脉冲布袋除尘器)</li>
+                                  <li>内蒙古霍煤双兴煤气化有限责任公司</li>
+                                  <li>驻扎们乌德总领馆（脉冲布袋除尘器 ）</li>
+                                  <li>虎石台热电（布袋除尘器） </li>
+                                  <li>沈海热电厂（脉冲布袋除尘器 ）</li>
+                                  <li>沈阳华瑞供热烟气治理维修改造工程 </li>
+                                  <li>集安铁合金（大布袋脉冲除尘器 ） </li>
+                                  <li>铁岭水泥厂（脉冲布袋除尘器 ）</li>
+                              </ol>
+                          </dd>
+                      </dl>
+                     <dl>
+                         <dt><img src="img/project2.png" alt="">
+                         <p><img src="img/more.png" alt=""></p>
+                         </dt>
+
+                         <dd>
+                             <ol>
+                                 <li>黑山县供暖有限公司（脉冲布袋除尘器）</li>
+                                 <li>抚顺页岩炼油厂（脉冲布袋除尘器)</li>
+                                 <li>内蒙古霍煤双兴煤气化有限责任公司</li>
+                                 <li>驻扎们乌德总领馆（脉冲布袋除尘器 ）</li>
+                                 <li>虎石台热电（布袋除尘器） </li>
+                                 <li>沈海热电厂（脉冲布袋除尘器 ）</li>
+                                 <li>沈阳华瑞供热烟气治理维修改造工程 </li>
+                                 <li>集安铁合金（大布袋脉冲除尘器 ） </li>
+                                 <li>铁岭水泥厂（脉冲布袋除尘器 ）</li>
+                             </ol>
+                         </dd>
+                     </dl>
+
+                 </div>
+                 <div class="project_right">
+                     <dl>
+                         <dt><img src="img/project3.png" alt="">
+                         <span><img src="img/more.png" alt=""></span>
+                         </dt>
+
+                         <dd>
+                             <ol>
+                                 <li>黑山县供暖有限公司（脉冲布袋除尘器）</li>
+                                 <li>抚顺页岩炼油厂（脉冲布袋除尘器)</li>
+                                 <li>内蒙古霍煤双兴煤气化有限责任公司</li>
+                                 <li>驻扎们乌德总领馆（脉冲布袋除尘器 ）</li>
+                                 <li>虎石台热电（布袋除尘器） </li>
+                                 <li>沈海热电厂（脉冲布袋除尘器 ）</li>
+                                 <li>沈阳华瑞供热烟气治理维修改造工程 </li>
+                                 <li>集安铁合金（大布袋脉冲除尘器 ） </li>
+                                 <li>铁岭水泥厂（脉冲布袋除尘器 ）</li>
+                             </ol>
+                         </dd>
+                     </dl>
+                     <p><img src="img/tel2.jpg" alt=""></p>
+                 </div>
+              </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-nav">
+            <ul>
+                <li>首页</li>
+                <li>公司介绍</li>
+                <li>品牌文化</li>
+                <li>产品服务</li>
+                <li>资质荣誉</li>
+                <li>工程案例</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+        <div class="foot-bot">
+            <p>版权所有：沈阳东苑中科环境工程有限公司 Copyright 2016 www.sydyzk.com</p>
+            <p>
+                <img src="img/wechat.png" alt="">
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(".culture>.hope>.one").click(function(){
+                $(".culture>.hope>.two").toggle();
+
+            });
+            $(".culture>.forward>.one").click(function(){
+                $(".culture>.forward>.two").toggle();
+            });
+            $(".culture>.management>.one").click(function(){
+                $(".culture>.management>.two").toggle();
+            });
+            $(".culture>.value>.one").click(function(){
+                $(".culture>.value>.two").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

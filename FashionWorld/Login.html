@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=67jMQ5DmYTe1TLMBKFUTcZAR"></script>
+	</head>
+
+	<body>
+		<div class=" banner">
+			<div class="banner-content">
+				<h1><a href="">Fashion<span>world</span></a></h1>
+				<h5>It change our life</h5>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row" style="padding-top:2em;">
+				<div class="col-md-4 col-xs-12  contact-info">
+					<h3 class="text-center">Contact info</h3>
+					<p class="text-left">Lofbh dfhueb fhfueb fhed eng nvooa digiee vifeo foen fiiffefi sfoonk fh dfhhdfhue dsfhfei bbj hfhe ffjje iinng ieinf</p>
+					<h5>Email:  <a href="mailto:lcf9581@163.com">lcf9581@163.com</a> </h5>
+					<h5>95560 ST Dolor,London</h5>
+					<h5>Telephone:+2 800 544 60335</h5>
+					<h5>FAX:+1080 889 4444</h5>
+				</div>
+
+				<div class="col-md-8 col-xs-12 contact-form">
+					<h3 class="text-center"> Contact Form </h3>
+					<div class="row">
+						<div class="col-md-6">
+							<form name="contact-user-form" role="form">
+							
+							    <div class="form-group">
+									<input type="text" class="form-control" id="name" placeholder="Name">
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="email" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="phone" placeholder="Phone">
+								</div>
+							
+							</form>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<textarea class="form-control" rows="6" placeholder="Message..."></textarea>
+							</div>
+						</div>
+					</div>
+				
+				    <div class="form-group">
+						<input type="submit" class="form-control" id="submit" value="Submit" placeholder=" "
+							 style="border-color: #803d9a;"
+							>
+				    </div>
+				</div>
+
+			</div>
+             
+		</div>
+		
+		<div class="container-fluid map" >
+			<h3 class="text-center"> How to find us</h3>
+			<div id="allmap" style="height:500px ">	
+			
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<p>Copyright &copy; 2015</p>
+		</div>
+
+	</body>
+	
+	
+<script type="text/javascript">
+    $(function () {
+        ShowMap('113.54143,22.274386', 'Fashion World', '南京雨花台区软件学院', '021-1222112', '18970220334', '20');
+    })
+    function getInfo(id) {
+        $.ajax({
+            type: "POST",
+            url: "WebUserControl/Contact/GetInfo.ashx",
+            cache: false,
+            async: false,
+            data: { ID: id },
+            success: function (data) {
+                data = eval(data);
+                var length = data.length;
+                if (length > 0) {
+                    ShowMap(data[0]["Image"], data[0]["NewsTitle"], data[0]["Address"], data[0]["Phone"], data[0]["NewsTags"], data[0]["NewsNum"]);
+                }
+            }
+        });
+    }
+    function ShowMap(zuobiao, name, addrsee, phone, chuanzhen, zoom) {
+        var arrzuobiao = zuobiao.split(',');
+        var map = new BMap.Map("allmap");
+        map.centerAndZoom(new BMap.Point(arrzuobiao[0], arrzuobiao[1]), zoom);
+        map.addControl(new BMap.NavigationControl());
+        var marker = new BMap.Marker(new BMap.Point(arrzuobiao[0], arrzuobiao[1]));
+        map.addOverlay(marker);
+        var infoWindow = new BMap.InfoWindow('<p style="color: #bf0008;font-size:14px;">' + name + '</p><p>地址：' + addrsee + '</p><p>电话：' + phone + '</p><p>传真：' + chuanzhen + '</p>');
+        marker.addEventListener("click", function () {
+            this.openInfoWindow(infoWindow);
+        });
+        marker.openInfoWindow(infoWindow);
+    }
+</script>
+
+</html>
+
+
